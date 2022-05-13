@@ -1,0 +1,10 @@
+20:46:05 **** Incremental Build of configuration Debug for project Hermes ****
+make -j8 all 
+arm-none-eabi-size   Hermes.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57016	    856	  15768	  73640	  11fa8	Hermes.elf
+Finished building: default.size.stdout
+ 
+
+20:46:06 Build Finished. 0 errors, 0 warnings. (took 816ms)
+

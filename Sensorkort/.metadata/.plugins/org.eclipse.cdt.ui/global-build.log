@@ -1,0 +1,2024 @@
+20:29:25 **** Build of configuration Debug for project Hermes ****
+make -j8 all 
+arm-none-eabi-gcc "../USB_DEVICE/Target/usbd_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/Target/usbd_conf.d" -MT"USB_DEVICE/Target/usbd_conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/Target/usbd_conf.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usb_device.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usb_device.d" -MT"USB_DEVICE/App/usb_device.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usb_device.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_desc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_desc.d" -MT"USB_DEVICE/App/usbd_desc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_desc.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f415rgtx.d" -MT"Core/Startup/startup_stm32f415rgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f415rgtx.o" "../Core/Startup/startup_stm32f415rgtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Core/Inc/tm_lib/tm_stm32_delay.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Inc/tm_lib/tm_stm32_delay.d" -MT"Core/Inc/tm_lib/tm_stm32_delay.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Inc/tm_lib/tm_stm32_delay.o"
+arm-none-eabi-gcc "../Core/Inc/tm_lib/tm_stm32_ds18b20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Inc/tm_lib/tm_stm32_ds18b20.d" -MT"Core/Inc/tm_lib/tm_stm32_ds18b20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Inc/tm_lib/tm_stm32_ds18b20.o"
+arm-none-eabi-gcc "../Core/Inc/tm_lib/tm_stm32_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Inc/tm_lib/tm_stm32_gpio.d" -MT"Core/Inc/tm_lib/tm_stm32_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Inc/tm_lib/tm_stm32_gpio.o"
+arm-none-eabi-gcc "../Core/Inc/tm_lib/tm_stm32_onewire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Inc/tm_lib/tm_stm32_onewire.d" -MT"Core/Inc/tm_lib/tm_stm32_onewire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Inc/tm_lib/tm_stm32_onewire.o"
+arm-none-eabi-gcc "../Core/Inc/tm_lib/tm_stm32_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Inc/tm_lib/tm_stm32_rcc.d" -MT"Core/Inc/tm_lib/tm_stm32_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Inc/tm_lib/tm_stm32_rcc.o"
+arm-none-eabi-gcc "../Core/Inc/metodar.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Inc/metodar.d" -MT"Core/Inc/metodar.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Inc/metodar.o"
+arm-none-eabi-gcc "../Core/Inc/shift.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Inc/shift.d" -MT"Core/Inc/shift.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Inc/shift.o"
+arm-none-eabi-gcc -o "Hermes.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Downloads\hermes-main\hermes-main\Hermes\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Hermes.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Hermes.elf
+ 
+arm-none-eabi-size   Hermes.elf 
+arm-none-eabi-objdump -h -S  Hermes.elf  > "Hermes.list"
+arm-none-eabi-objcopy  -O binary  Hermes.elf  "Hermes.bin"
+   text	   data	    bss	    dec	    hex	filename
+  57016	    856	  15768	  73640	  11fa8	Hermes.elf
+Finished building: default.size.stdout
+ 
+Finished building: Hermes.bin
+ 
+Finished building: Hermes.list
+ 
+20:39:30 **** Incremental Build of configuration Debug for project Hermes ****
+make -j8 all 
+arm-none-eabi-size   Hermes.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57016	    856	  15768	  73640	  11fa8	Hermes.elf
+Finished building: default.size.stdout
+ 
+20:40:47 **** Incremental Build of configuration Debug for project Hermes ****
+make -j8 all 
+arm-none-eabi-size   Hermes.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57016	    856	  15768	  73640	  11fa8	Hermes.elf
+Finished building: default.size.stdout
+ 
+20:41:10 **** Incremental Build of configuration Debug for project Hermes ****
+make -j8 all 
+arm-none-eabi-size   Hermes.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57016	    856	  15768	  73640	  11fa8	Hermes.elf
+Finished building: default.size.stdout
+ 
+20:42:36 **** Incremental Build of configuration Debug for project Hermes ****
+make -j8 all 
+arm-none-eabi-size   Hermes.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57016	    856	  15768	  73640	  11fa8	Hermes.elf
+Finished building: default.size.stdout
+ 
+20:46:05 **** Incremental Build of configuration Debug for project Hermes ****
+make -j8 all 
+arm-none-eabi-size   Hermes.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57016	    856	  15768	  73640	  11fa8	Hermes.elf
+Finished building: default.size.stdout
+ 
+20:56:13 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9176	  65584	  10030	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:57:34 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9176	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:57:58 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9176	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:58:22 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9176	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+21:06:56 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55940	    508	   9176	  65624	  10058	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+12:09:00 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+../Core/Src/funksjoner.c: In function 'dybdeutregning':
+../Core/Src/funksjoner.c:236:2: error: cannot convert to a pointer type
+  236 |  dybde = (int16_t *)((P-P0)*10000/(rho*9.81));
+      |  ^~~~~
+../Core/Src/funksjoner.c:236:8: warning: assignment to 'int16_t' {aka 'short int'} from 'int16_t *' {aka 'short int *'} makes integer from pointer without a cast [-Wint-conversion]
+  236 |  dybde = (int16_t *)((P-P0)*10000/(rho*9.81));
+      |        ^
+make: *** [Core/Src/subdir.mk:58: Core/Src/funksjoner.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:10:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9176	  65576	  10028	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+14:36:54 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9176	  65576	  10028	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+15:52:59 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9176	  65576	  10028	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:53:08 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9176	  65576	  10028	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:41:36 **** Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  55916	    508	   9184	  65608	  10048	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:43:50 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55916	    508	   9184	  65608	  10048	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:44:15 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55916	    508	   9184	  65608	  10048	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:46:53 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55916	    508	   9184	  65608	  10048	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:47:40 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55860	    508	   9184	  65552	  10010	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:54:42 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/trykk.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/trykk.d" -MT"Core/Src/trykk.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/trykk.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55844	    508	   9184	  65536	  10000	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:54:50 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55844	    508	   9184	  65536	  10000	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:55:22 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:56:01 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/trykk.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/trykk.d" -MT"Core/Src/trykk.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/trykk.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:56:08 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:57:27 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:57:28 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:59:20 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:59:40 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:05:52 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55900	    508	   9184	  65592	  10038	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:08:24 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9184	  65576	  10028	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:10:12 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9184	  65576	  10028	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:13:04 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/trykk.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/trykk.d" -MT"Core/Src/trykk.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/trykk.o"
+In file included from ../Core/Src/main.c:36:
+../Core/Inc/extern_variabler.h:210:7: error: redefinition of 'P'
+  210 | float P = 0.0;
+      |       ^
+In file included from ../Core/Src/main.c:35:
+../Core/Inc/variabler.h:193:7: note: previous definition of 'P' was here
+  193 | float P = 0.0;
+      |       ^
+In file included from ../Core/Src/main.c:36:
+../Core/Inc/extern_variabler.h:211:7: error: redefinition of 'P0'
+  211 | float P0 = 0.0;
+      |       ^~
+In file included from ../Core/Src/main.c:35:
+../Core/Inc/variabler.h:194:7: note: previous definition of 'P0' was here
+  194 | float P0 = 0.0;
+      |       ^~
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+19:13:29 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/trykk.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/trykk.d" -MT"Core/Src/trykk.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/trykk.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9184	  65576	  10028	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:13:55 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9184	  65576	  10028	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:14:48 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:15:07 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:15:19 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:19:53 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:20:03 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:22:16 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:57:53 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55876	    508	   9176	  65560	  10018	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:59:57 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55868	    508	   9176	  65552	  10010	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:21:25 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55236	    508	   9176	  64920	   fd98	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:21:35 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  51748	    508	   9168	  61424	   eff0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:21:44 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  51748	    508	   9168	  61424	   eff0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:22:00 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  51748	    508	   9168	  61424	   eff0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:22:16 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  51748	    508	   9168	  61424	   eff0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+14:28:34 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  49900	    508	   9168	  59576	   e8b8	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+14:28:44 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49900	    508	   9168	  59576	   e8b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+14:30:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  45076	    504	   9048	  54628	   d564	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+14:32:29 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+14:45:30 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+14:45:45 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:05:51 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:16:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:16:59 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:38:22 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:38:57 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45060	    504	   9048	  54612	   d554	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:39:51 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55236	    508	   9176	  64920	   fd98	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+15:42:47 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55236	    508	   9176	  64920	   fd98	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+15:44:15 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55844	    508	   9176	  65528	   fff8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:41:07 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55852	    508	   9176	  65536	  10000	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:41:28 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55852	    508	   9176	  65536	  10000	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:24:39 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55868	    508	   9176	  65552	  10010	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:27:13 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55868	    508	   9176	  65552	  10010	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:50:57 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9176	  65568	  10020	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:59:41 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9176	  65568	  10020	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:00:59 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9176	  65568	  10020	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:10:58 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  56156	    508	   9192	  65856	  10140	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:30:43 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  56236	    508	   9192	  65936	  10190	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:31:06 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  56236	    508	   9192	  65936	  10190	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:32:13 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  56236	    508	   9192	  65936	  10190	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:32:43 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  56236	    508	   9192	  65936	  10190	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:34:13 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55884	    508	   9176	  65568	  10020	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:37:09 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55804	    508	   9176	  65488	   ffd0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+19:38:13 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55804	    508	   9176	  65488	   ffd0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:43:18 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55804	    508	   9176	  65488	   ffd0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:43:31 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55804	    508	   9176	  65488	   ffd0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:50:49 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55804	    508	   9176	  65488	   ffd0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:51:22 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55804	    508	   9176	  65488	   ffd0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:52:33 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55804	    508	   9176	  65488	   ffd0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:54:32 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55868	    508	   9176	  65552	  10010	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:17:34 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:23:01 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55892	    508	   9184	  65584	  10030	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+18:07:01 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/trykk.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/trykk.d" -MT"Core/Src/trykk.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/trykk.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  55908	    508	   9184	  65600	  10040	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+18:20:57 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  55908	    508	   9184	  65600	  10040	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+21:23:26 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:555:1: error: expected declaration or statement at end of input
+  555 | }
+      | ^
+At top level:
+../Core/Src/main.c:546:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  546 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:501:6: warning: 'HAL_CAN_RxFifo0MsgPendingCallback' defined but not used [-Wunused-function]
+  501 | void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan11) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:457:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  457 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:24:01 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:554:1: error: expected declaration or statement at end of input
+  554 | }
+      | ^
+../Core/Src/main.c:554:1: error: expected declaration or statement at end of input
+At top level:
+../Core/Src/main.c:545:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  545 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:500:6: warning: 'HAL_CAN_RxFifo0MsgPendingCallback' defined but not used [-Wunused-function]
+  500 | void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan11) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:456:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  456 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:24:59 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48428	    508	   9136	  58072	   e2d8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+21:26:07 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48428	    508	   9136	  58072	   e2d8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+10:31:51 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48420	    508	   9136	  58064	   e2d0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+10:32:00 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48420	    508	   9136	  58064	   e2d0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+10:44:04 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+../Core/Src/funksjoner.c: In function 'les_og_beregne_vinkler':
+../Core/Src/funksjoner.c:249:4: error: 'gyrox' undeclared (first use in this function); did you mean 'gyro_x'?
+  249 |    gyrox = my_gyro.y;
+      |    ^~~~~
+      |    gyro_x
+../Core/Src/funksjoner.c:249:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/funksjoner.c:250:4: error: 'gyroy' undeclared (first use in this function); did you mean 'gyro_y'?
+  250 |    gyroy = -my_gyro.x;
+      |    ^~~~~
+      |    gyro_y
+make: *** [Core/Src/subdir.mk:58: Core/Src/funksjoner.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+10:44:58 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+10:45:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+10:45:24 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:22:57 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+../Core/Src/funksjoner.c: In function 'les_og_beregne_vinkler':
+../Core/Src/funksjoner.c:241:48: warning: variable 'gyroz' set but not used [-Wunused-but-set-variable]
+  241 |    float accelx, accely, accelz, gyrox, gyroy, gyroz;
+      |                                                ^~~~~
+../Core/Src/funksjoner.c:241:26: warning: variable 'accelz' set but not used [-Wunused-but-set-variable]
+  241 |    float accelx, accely, accelz, gyrox, gyroy, gyroz;
+      |                          ^~~~~~
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48436	    508	   9136	  58080	   e2e0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:23:30 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+../Core/Src/funksjoner.c: In function 'les_og_beregne_vinkler':
+../Core/Src/funksjoner.c:241:48: warning: variable 'gyroz' set but not used [-Wunused-but-set-variable]
+  241 |    float accelx, accely, accelz, gyrox, gyroy, gyroz;
+      |                                                ^~~~~
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48436	    508	   9136	  58080	   e2e0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:23:40 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+../Core/Src/funksjoner.c: In function 'les_og_beregne_vinkler':
+../Core/Src/funksjoner.c:241:48: warning: variable 'gyroz' set but not used [-Wunused-but-set-variable]
+  241 |    float accelx, accely, accelz, gyrox, gyroy, gyroz;
+      |                                                ^~~~~
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:25:25 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48388	    508	   9136	  58032	   e2b0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:25:33 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48388	    508	   9136	  58032	   e2b0	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:29:54 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:30:14 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:34:42 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:37:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:37:33 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:38:42 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:42:19 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48364	    508	   9136	  58008	   e298	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:43:32 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48364	    508	   9136	  58008	   e298	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:45:08 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48364	    508	   9136	  58008	   e298	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+12:04:19 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+12:04:53 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+12:11:52 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+12:13:16 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+12:22:36 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+12:26:32 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48396	    508	   9136	  58040	   e2b8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+12:30:55 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+12:31:48 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+12:36:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/funksjoner.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/funksjoner.d" -MT"Core/Src/funksjoner.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/funksjoner.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+12:36:36 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+12:36:57 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+12:40:27 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+09:28:51 **** Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+09:29:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+09:35:29 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+09:36:08 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+09:36:21 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+09:44:42 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48364	    508	   9136	  58008	   e298	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+09:46:50 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:554:1: error: expected declaration or statement at end of input
+  554 | }
+      | ^
+At top level:
+../Core/Src/main.c:545:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  545 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:500:6: warning: 'HAL_CAN_RxFifo0MsgPendingCallback' defined but not used [-Wunused-function]
+  500 | void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan11) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:456:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  456 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+09:46:59 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+09:47:10 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+09:55:18 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+09:56:47 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+10:30:02 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+10:30:47 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:21:19 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:21:35 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:28:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:30:37 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:30:54 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:35:25 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:36:18 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:38:18 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:38:27 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:43:47 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:43:54 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:47:24 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+11:47:34 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+11:48:25 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+14:37:36 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/icm20948.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/icm20948.d" -MT"Core/Src/icm20948.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/icm20948.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+14:37:47 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48380	    508	   9136	  58024	   e2a8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+19:35:00 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:04:30 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:04:36 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:05:01 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:05:12 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:05:45 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:07:29 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:07:48 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:08:17 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:08:44 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:17:05 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:20:24 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:27:07 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48412	    508	   9136	  58056	   e2c8	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+20:10:38 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F415xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Sensorkort_Kode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Jurgi\Documents\STM_prosjekter\Sensorkort\Sensorkort_Kode\STM32F415RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort_Kode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort_Kode.elf
+ 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+arm-none-eabi-objdump -h -S  Sensorkort_Kode.elf  > "Sensorkort_Kode.list"
+   text	   data	    bss	    dec	    hex	filename
+  55860	    508	   9184	  65552	  10010	Sensorkort_Kode.elf
+arm-none-eabi-objcopy  -O binary  Sensorkort_Kode.elf  "Sensorkort_Kode.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort_Kode.bin
+ 
+Finished building: Sensorkort_Kode.list
+ 
+20:10:50 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55860	    508	   9184	  65552	  10010	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 

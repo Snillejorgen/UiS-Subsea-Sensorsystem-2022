@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Sensorkort_Kode/Core/Variabler&apos;" deleteContents="false" description="Delete resource &apos;Sensorkort_Kode/Core/Variabler&apos;" element1="/Sensorkort_Kode/Core/Variabler" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1646743834470"/>
+</session>

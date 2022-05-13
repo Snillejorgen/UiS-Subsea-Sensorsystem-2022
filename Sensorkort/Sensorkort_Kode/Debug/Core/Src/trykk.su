@@ -1,0 +1,7 @@
+trykk.c:17:6:TRYKKSENSOR_Initialiser	16	static
+trykk.c:44:14:TRYKKSENSOR_LesKalibrering	48	static
+trykk.c:122:7:TRYKKSENSOR_LesTrykk	64	static
+trykk.c:219:14:TRYKK_sjekk	24	static
+trykk.c:232:14:TRYKKSENSOR_LesRegister	48	static
+trykk.c:242:14:TRYKKSENSOR_LesRegistrene	48	static
+trykk.c:252:14:TRYKKSENSOR_SkrivRegister	32	static

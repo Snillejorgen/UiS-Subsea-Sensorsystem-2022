@@ -1,0 +1,625 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2022 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "can.h"
+#include "spi.h"
+#include "usb_device.h"
+#include "gpio.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+#include "usbd_cdc_if.h"
+#include "string.h"
+#include <stdio.h>
+#include "icm20948.h"
+#include "math.h"
+
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+
+/* USER CODE BEGIN PV */
+
+
+// Variabel for non-blocking delayfunksjon
+uint32_t tickstart;
+
+// Lagring av sensordata
+axises my_gyro;
+axises my_accel;
+axises my_mag;
+
+uint16_t gyro_x = 0;
+uint16_t gyro_y = 0;
+uint16_t gyro_z = 0;
+uint16_t gyro_r = 0;	// Stamp gitt av gyroskop
+uint16_t gyro_s = 0;	// Stamp gitt av gyroskop
+uint16_t aks_x = 0;
+uint16_t aks_y = 0;
+uint16_t aks_z = 0;
+uint16_t aks_r = 0;		// Rull gitt av akselerometer
+uint16_t aks_s = 0;		// Stamp gitt av akselerometer
+uint16_t komp_r = 0;	// Rull gitt av komplimentærfilter
+uint16_t komp_s = 0;	// Stamp gitt av komplimentærfilter
+
+// Variabler for bruk i mellomregning
+float gyro_r_f = 0;
+float gyro_s_f = 0;
+float aks_r_f = 0;
+float aks_s_f = 0;
+float komp_r_f = 0;
+float komp_s_f = 0;
+
+// Tidskonstant (10ms)
+float td = 0;
+float td1 = 0;
+float td2 = 0;
+
+// Variabler for å dele data opp i 8bit for usb sending
+
+uint8_t msb_gx = 0; uint8_t lsb_gx = 0;
+
+uint8_t msb_gy = 0; uint8_t lsb_gy = 0;
+
+uint8_t msb_gz = 0; uint8_t lsb_gz = 0;
+
+uint8_t msb_gr = 0; uint8_t lsb_gr = 0;
+
+uint8_t msb_gs = 0; uint8_t lsb_gs = 0;
+
+uint8_t msb_ax = 0; uint8_t lsb_ax = 0;
+
+uint8_t msb_ay = 0; uint8_t lsb_ay = 0;
+
+uint8_t msb_az = 0; uint8_t lsb_az = 0;
+
+uint8_t msb_ar = 0; uint8_t lsb_ar = 0;
+
+uint8_t msb_as = 0; uint8_t lsb_as = 0;
+
+uint8_t msb_kr = 0; uint8_t lsb_kr = 0;
+
+uint8_t msb_ks = 0; uint8_t lsb_ks = 0;
+
+uint8_t msb_tid = 0; uint8_t lsb_tid = 0;
+
+uint8_t msb_sek = 0; uint8_t lsb_sek = 0;
+
+// Flagg for negativ verdi	(0 = positivt tall, 1 = negativt tall)
+
+uint8_t gxneg = 0;
+uint8_t gyneg = 0;
+uint8_t gzneg = 0;
+uint8_t grneg = 0;
+uint8_t gsneg = 0;
+uint8_t axneg = 0;
+uint8_t ayneg = 0;
+uint8_t azneg = 0;
+uint8_t arneg = 0;
+uint8_t asneg = 0;
+uint8_t krneg = 0;
+uint8_t ksneg = 0;
+
+// Initialiserer tilfeldig nummer
+uint8_t num = 0;
+
+// Hjelpevariabel for å indeksere imu_str
+uint8_t i = 0;
+
+// Definerer π
+float pi = 3.14159265359;
+
+// Strengbuffer for data fra ICM
+uint8_t imu_usb[65];
+
+// Teller
+uint8_t count = 0;
+
+// Tidsvariabel
+uint16_t tid = 0;
+uint16_t sek = 0;
+uint32_t t1 = 0;
+uint32_t t2 = 0;
+char tid_str[10];
+
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+/* USER CODE BEGIN PFP */
+
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+  /* USER CODE BEGIN 1 */
+
+	//Initialiser imu-databuffer
+	imu_usb[0] = 't';
+//	for(i = 0; i < 36; i++){
+//	     imu_str[i+1] = i;
+//	}
+	imu_usb[5] = imu_usb[10] = imu_usb[15] = imu_usb[20] = imu_usb[25] = 'g';
+	imu_usb[30] = imu_usb[35] = imu_usb[40] = imu_usb[45] = imu_usb[50] = 'a';
+	imu_usb[55] = imu_usb[60] = 'k';
+	imu_usb[6] = imu_usb[31] = 'x';
+	imu_usb[11] = imu_usb[36] = 'y';
+	imu_usb[16] = imu_usb[41] = 'z';
+	imu_usb[21] = imu_usb[46] = imu_usb[56] =  'r';
+	imu_usb[26] = imu_usb[51] = imu_usb[61] = 's';
+
+
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_CAN1_Init();
+  MX_USB_DEVICE_Init();
+  MX_SPI1_Init();
+  /* USER CODE BEGIN 2 */
+
+  // Initialiserer tickstart
+  tickstart = HAL_GetTick();
+
+  //initialiser 9DOF
+  icm20948_init();
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+
+
+	  if((HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)) == 0){
+		  HAL_GPIO_WritePin(GPIOA, GPIO_Pin_3, 1);
+	  }
+	  // Setter forrige gyro verdi til å være siste nye
+//	  gyro_r_l = gyro_r_n;
+//	  gyro_s_l = gyro_s_n;
+
+
+	  // leser av data fra gyroskop og akselerometer med skalert funksjon
+	  icm20948_gyro_read_dps(&my_gyro);
+	  icm20948_accel_read_g(&my_accel);
+
+
+	  // Lagrer tid som ny tid og lager tidsintervall
+	  td1 = HAL_GetTick();
+	  td = (td1-td2)/1000;
+
+	  // Regner ut vinkel vhja. akselerometer
+
+	  aks_s_f = (atan2((float)(my_accel.y), (float)(sqrt((pow(my_accel.x,2))+(pow(my_accel.z,2)))))* 180 / pi);
+	  aks_r_f = (atan2((float)(my_accel.x), (float)(my_accel.z))* 180 / pi);
+
+	  // Regner ut vinkel vhja. gyroskop
+
+	  gyro_r_f -= (float)(my_gyro.y) * td;
+	  gyro_s_f += (float)(my_gyro.x) * td;
+	  komp_r_f -= (float)(my_gyro.y) * td;
+	  komp_s_f += (float)(my_gyro.x) * td;
+
+	  // Bruker verdier fra akselerometer og gyroskop og lager komplimentærfilter
+	  komp_r_f = komp_r_f*0.99 + aks_r_f*0.01;
+	  komp_s_f = komp_s_f*0.99 + aks_s_f*0.01;
+
+	  // Lagrer tid som forrige tid
+	  td2 = HAL_GetTick();
+
+
+	  // Er dataen negativ?
+
+	  if(my_gyro.x < 0){
+		  gxneg = 1;
+		  gyro_x = -(int)(my_gyro.x * 10);
+	  }
+	  else{
+		  gxneg = 0;
+		  gyro_x = (int)(my_gyro.x * 10);
+	  }
+	  if(my_gyro.y < 0){
+		  gyneg = 1;
+		  gyro_y = -(int)(my_gyro.y * 10);
+	  }
+	  else{
+		  gyneg = 0;
+		  gyro_y = (int)(my_gyro.y * 10);
+	  }
+
+	  if(my_gyro.z < 0){
+		  gzneg = 1;
+		  gyro_z = -(int)(my_gyro.z * 10);
+	  }
+	  else{
+		  gzneg = 0;
+		  gyro_z = (int)(my_gyro.z * 10);
+	  }
+
+	  if(my_accel.x < 0){
+		  axneg = 1;
+		  aks_x = -(int)(my_accel.x * 981);
+	  }
+	  else{
+		  axneg = 0;
+		  aks_x = (int)(my_accel.x * 981);
+	  }
+	  if(my_accel.y < 0){
+		  ayneg = 1;
+		  aks_y = -(int)(my_accel.y * 981);
+	  }
+	  else{
+		  ayneg = 0;
+		  aks_y = (int)(my_accel.y * 981);
+	  }
+
+	  if(my_accel.z < 0){
+		  azneg = 1;
+		  aks_z = -(int)(my_accel.z * 981);
+	  }
+	  else{
+		  azneg = 0;
+		  aks_z = (int)(my_accel.z * 981);
+	  }
+
+	  if(gyro_r_f < 0){
+		  grneg = 1;
+		  gyro_r = -(int)(gyro_r_f*10);
+	  }
+	  else{
+		  grneg = 0;
+		  gyro_r = (int)(gyro_r_f*10);
+	  }
+	  if(gyro_s_f < 0){
+		  gsneg = 1;
+		  gyro_s = -(int)(gyro_s_f*10);
+	  }
+	  else{
+		  gsneg = 0;
+		  gyro_s = (int)(gyro_s_f*10);
+	  }
+
+	  if((int)(aks_s_f*10) < 0){
+		  asneg = 1;
+		  aks_s = -(int)(aks_s_f*10);
+	  }
+	  else{
+		  asneg = 0;
+		  aks_s = (int)(aks_s_f*10);
+	  }
+	  if((int)(aks_r_f*10) < 0){
+		  arneg = 1;
+		  aks_r = -(int)(aks_r_f*10);
+	  }
+	  else{
+		  arneg = 0;
+		  aks_r = (int)(aks_r_f*10);
+	  }
+	  if (komp_s_f < 0){
+		  ksneg = 1;
+		  komp_s = -(int)(komp_s_f*10);
+	  }
+	  else{
+		  ksneg = 0;
+		  komp_s = (int)(komp_s_f*10);
+	  }
+	  if (komp_r_f < 0){
+		  krneg = 1;
+		  komp_r = -(int)(komp_r_f*10);
+	  }
+	  else{
+		  krneg = 0;
+		  komp_r = (int)(komp_r_f*10);
+	  }
+
+
+//	  // dødsone for gyrodata
+//
+//	  if(gyro_x < 5 && gyro_x > -5){
+//		  gyro_x = 0;
+//	  }
+//	  if(gyro_y < 5 && gyro_y > -5){
+//		  gyro_y = 0;
+//	  }
+//	  if(gyro_z < 5 && gyro_z > -5){
+//		  gyro_z = 0;
+//	  }
+//	  if(aks_x < 10 && aks_x > -10){
+//		  aks_x = 0;
+//	  }
+//	  if(aks_y < 10 && aks_y > -10){
+//		  aks_y = 0;
+//	  }
+
+
+	  // Deler opp 16-bits data til 8-bits data for sending over USB
+
+	  lsb_gx = ((uint16_t)gyro_x >> 0) & 0xFF;
+	  msb_gx = ((uint16_t)gyro_x >> 8) & 0xFF;
+
+	  lsb_gy = ((uint16_t)gyro_y >> 0) & 0xFF;
+	  msb_gy = ((uint16_t)gyro_y >> 8) & 0xFF;
+
+	  lsb_gz = ((uint16_t)gyro_z >> 0) & 0xFF;
+	  msb_gz = ((uint16_t)gyro_z >> 8) & 0xFF;
+
+	  lsb_gr = ((uint16_t)gyro_r >> 0) & 0xFF;
+	  msb_gr = ((uint16_t)gyro_r >> 8) & 0xFF;
+
+	  lsb_gs = ((uint16_t)gyro_s >> 0) & 0xFF;
+	  msb_gs = ((uint16_t)gyro_s >> 8) & 0xFF;
+
+	  lsb_ax = ((uint16_t)aks_x >> 0) & 0xFF;
+	  msb_ax = ((uint16_t)aks_x >> 8) & 0xFF;
+
+	  lsb_ay = ((uint16_t)aks_y >> 0) & 0xFF;
+	  msb_ay = ((uint16_t)aks_y >> 8) & 0xFF;
+
+	  lsb_az = ((uint16_t)aks_z >> 0) & 0xFF;
+	  msb_az = ((uint16_t)aks_z >> 8) & 0xFF;
+
+	  lsb_ar = ((uint16_t)aks_r >> 0) & 0xFF;
+	  msb_ar = ((uint16_t)aks_r >> 8) & 0xFF;
+
+	  lsb_as = ((uint16_t)aks_s >> 0) & 0xFF;
+	  msb_as = ((uint16_t)aks_s >> 8) & 0xFF;
+
+	  lsb_kr = ((uint16_t)komp_r >> 0) & 0xFF;
+	  msb_kr = ((uint16_t)komp_r >> 8) & 0xFF;
+
+	  lsb_ks = ((uint16_t)komp_s >> 0) & 0xFF;
+	  msb_ks = ((uint16_t)komp_s >> 8) & 0xFF;
+
+
+	  // Kopierer innhold fra IMU-data inn i datapakke
+
+	  memcpy(&imu_usb[7], &gxneg, 1);
+	  memcpy(&imu_usb[8], &msb_gx, 1);
+	  memcpy(&imu_usb[9], &lsb_gx, 1);
+
+	  memcpy(&imu_usb[12], &gyneg, 1);
+	  memcpy(&imu_usb[13], &msb_gy, 1);
+	  memcpy(&imu_usb[14], &lsb_gy, 1);
+
+	  memcpy(&imu_usb[17], &gzneg, 1);
+	  memcpy(&imu_usb[18], &msb_gz, 1);
+	  memcpy(&imu_usb[19], &lsb_gz, 1);
+
+	  memcpy(&imu_usb[22], &grneg, 1);
+	  memcpy(&imu_usb[23], &msb_gr, 1);
+	  memcpy(&imu_usb[24], &lsb_gr, 1);
+
+	  memcpy(&imu_usb[27], &gsneg, 1);
+	  memcpy(&imu_usb[28], &msb_gs, 1);
+	  memcpy(&imu_usb[29], &lsb_gs, 1);
+
+	  memcpy(&imu_usb[32], &axneg, 1);
+	  memcpy(&imu_usb[33], &msb_ax, 1);
+	  memcpy(&imu_usb[34], &lsb_ax, 1);
+
+	  memcpy(&imu_usb[37], &ayneg, 1);
+	  memcpy(&imu_usb[38], &msb_ay, 1);
+	  memcpy(&imu_usb[39], &lsb_ay, 1);
+
+	  memcpy(&imu_usb[42], &azneg, 1);
+	  memcpy(&imu_usb[43], &msb_az, 1);
+	  memcpy(&imu_usb[44], &lsb_az, 1);
+
+	  memcpy(&imu_usb[47], &arneg, 1);
+	  memcpy(&imu_usb[48], &msb_ar, 1);
+	  memcpy(&imu_usb[49], &lsb_ar, 1);
+
+	  memcpy(&imu_usb[52], &asneg, 1);
+	  memcpy(&imu_usb[53], &msb_as, 1);
+	  memcpy(&imu_usb[54], &lsb_as, 1);
+
+	  memcpy(&imu_usb[57], &krneg, 1);
+	  memcpy(&imu_usb[58], &msb_kr, 1);
+	  memcpy(&imu_usb[59], &lsb_kr, 1);
+
+	  memcpy(&imu_usb[62], &ksneg, 1);
+	  memcpy(&imu_usb[63], &msb_ks, 1);
+	  memcpy(&imu_usb[64], &lsb_ks, 1);
+
+
+
+	  // genererer tilfeldig tall mellom 1 og 50
+//	  num = 1 + rand() / (RAND_MAX / (50 - 1 + 1) + 1);
+
+	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == 0){
+		  HAL_GPIO_WritePin(GPIOC, STATLED_Pin, 1);
+		  HAL_GPIO_WritePin(GPIOC, DATALED_Pin, 0);
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
+		  t1 = 0;
+		  sek = 0;
+	  }
+	  else{
+		  HAL_GPIO_WritePin(GPIOC, STATLED_Pin, 0);
+		  HAL_GPIO_WritePin(GPIOC, DATALED_Pin, 1);
+		  if((HAL_GetTick()-tickstart) >= 10){						// Non-blocking delayfunksjon
+
+			  // Setter lys aktivt under sending
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3,1);
+			  if(t1 == 0){
+				  tid = 0;
+				  t1 = HAL_GetTick();
+			  }
+			  else{
+				  t2 = HAL_GetTick();
+				  tid = t2-t1;
+			  }
+			  if(tid >= 1000){
+				  sek += 1;
+				  tid -= 1000;
+				  t1 = HAL_GetTick();
+			  }
+
+			  // Deler opp 16-bits tidsdata til 8-bits data for sending over USB
+
+			  lsb_tid = ((uint16_t)tid >> 0) & 0xFF;
+			  msb_tid = ((uint16_t)tid >> 8) & 0xFF;
+
+			  lsb_sek = ((uint16_t)sek >> 0) & 0xFF;
+			  msb_sek = ((uint16_t)sek >> 8) & 0xFF;
+
+			  // Kopierer innhold fra tidsdata inn i datapakke
+			  memcpy(&imu_usb[1], &msb_sek, 1);
+			  memcpy(&imu_usb[2], &lsb_sek, 1);
+			  memcpy(&imu_usb[3], &msb_tid, 1);
+			  memcpy(&imu_usb[4], &lsb_tid, 1);
+
+			  // Sender data over USB
+			  CDC_Transmit_FS((uint8_t *)imu_usb, 65);
+
+			  // Deaktiverer lys når sending er fullført
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3,0);
+			  tickstart = HAL_GetTick();
+		  }
+	  }
+
+  }
+  /* USER CODE END 3 */
+}
+
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+
+  /** Configure the main internal regulator output voltage
+  */
+  __HAL_RCC_PWR_CLK_ENABLE();
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = 8;
+  RCC_OscInitStruct.PLL.PLLN = 144;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLQ = 6;
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Initializes the CPU, AHB and APB buses clocks
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/* USER CODE BEGIN 4 */
+
+/* USER CODE END 4 */
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
+void Error_Handler(void)
+{
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* User can add his own implementation to report the HAL error return state */
+  __disable_irq();
+  while (1)
+  {
+  }
+  /* USER CODE END Error_Handler_Debug */
+}
+
+#ifdef  USE_FULL_ASSERT
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(uint8_t *file, uint32_t line)
+{
+  /* USER CODE BEGIN 6 */
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+  /* USER CODE END 6 */
+}
+#endif /* USE_FULL_ASSERT */
+

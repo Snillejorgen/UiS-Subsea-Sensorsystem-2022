@@ -1,0 +1,7 @@
+stts75.c:19:13:TEMP_skrivtilreg	48	static
+stts75.c:35:13:TEMP_lesreg	48	static
+stts75.c:51:13:TEMP_les_temp_pol_bit	32	static
+stts75.c:67:13:TEMP_skriv_opplosning	32	static
+stts75.c:88:13:TEMP_les_opplosning	32	static
+stts75.c:107:13:TEMP_sjekk	32	static
+stts75.c:126:13:TEMP_les	48	static

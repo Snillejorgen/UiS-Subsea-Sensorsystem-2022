@@ -1,0 +1,10 @@
+20:10:50 **** Incremental Build of configuration Debug for project Sensorkort_Kode ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort_Kode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55860	    508	   9184	  65552	  10010	Sensorkort_Kode.elf
+Finished building: default.size.stdout
+ 
+
+20:10:50 Build Finished. 0 errors, 0 warnings. (took 486ms)
+

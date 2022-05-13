@@ -1,0 +1,11 @@
+funksjoner.c:43:6:bryteravprelling	8	static
+funksjoner.c:79:6:sjekklekkasje	8	static
+funksjoner.c:115:6:oppstartCAN	16	static
+funksjoner.c:139:6:sendDataCAN	16	static
+funksjoner.c:145:6:init_usbbuf	4	static
+funksjoner.c:160:6:les_og_behandle_temp	16	static
+funksjoner.c:224:9:dybdeutregning	40	static
+funksjoner.c:240:6:les_og_beregne_vinkler	56	static
+funksjoner.c:440:6:lag_datapakker_CAN	4	static
+funksjoner.c:460:6:lag_datapakke_usb	4	static
+funksjoner.c:514:6:senddatapakkerCAN	8	static
