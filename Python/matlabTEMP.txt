@@ -1,0 +1,8 @@
+% matlab data :
+
+temp = [];
+t = [];
+
+
+
+Tekstfil generert 04/04/2022 08:36:29
