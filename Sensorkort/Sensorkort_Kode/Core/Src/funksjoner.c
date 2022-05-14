@@ -247,7 +247,7 @@ void les_og_beregne_vinkler(kommskift kommunikasjonsmetode){
 
 	  // Akser blir snudd for å samsvare med ROV-en
 	  accelx = my_accel.y;
-	  accely = my_accel.x;
+	  accely = -my_accel.x;
 	  accelz = my_accel.z;
 	  gyrox = my_gyro.y;
 	  gyroy = my_gyro.x;
