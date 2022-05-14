@@ -248,10 +248,10 @@ void les_og_beregne_vinkler(kommskift kommunikasjonsmetode){
 	  // Akser blir snudd for å samsvare med ROV-en
 	  accelx = my_accel.y;
 	  accely = my_accel.x;
-	  accelz = -my_accel.z;
+	  accelz = my_accel.z;
 	  gyrox = my_gyro.y;
 	  gyroy = my_gyro.x;
-	  gyroz = -my_gyro.z;
+	  gyroz = my_gyro.z;
 
 
 	  // Lagrer tid som ny tid og lager tidsskritt
@@ -261,14 +261,14 @@ void les_og_beregne_vinkler(kommskift kommunikasjonsmetode){
 	  // Regner ut vinkel vhja. akselerometer
 
 	  aks_s_f = (atan2((float)(accelx), (float)(sqrt((pow(accely,2))+(pow(accelz,2)))))* 180 / pi);
-	  aks_r_f = (atan2((float)(accely), (float)(-accelz))* 180 / pi);
+	  aks_r_f = (atan2((float)(accely), (float)(accelz))* 180 / pi);
 
 
 	  // Regner ut vinkel vhja. gyroskop
 
-	  gyro_r_f -= (float)(gyrox) * td;
+	  gyro_r_f += (float)(gyrox) * td;
 	  gyro_s_f += (float)(gyroy) * td;
-	  komp_r_f -= (float)(gyrox) * td;
+	  komp_r_f += (float)(gyrox) * td;
 	  komp_s_f += (float)(gyroy) * td;
 
 	  // Bruker verdier fra akselerometer og gyroskop og lager komplimentærfilter
